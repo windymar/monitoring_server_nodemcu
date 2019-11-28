@@ -8,7 +8,6 @@ void wifiConnectionEstablishmentTest()
 {
     WifiConnection wifiConnection;
     wifiConnection.connect(cfg::SSID, cfg::PASSWORD);
-
     TEST_ASSERT_EQUAL(true, wifiConnection.isConnected());
 }
 

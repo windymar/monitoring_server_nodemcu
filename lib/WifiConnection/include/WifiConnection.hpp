@@ -7,7 +7,7 @@ class WifiConnection
 {
 public:
     WifiConnection();
-    ~WifiConnection() = default;
+    ~WifiConnection();
 
     void connect(const String& p_ssid, const String& p_password) const;
     bool isConnected() const;

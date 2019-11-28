@@ -5,6 +5,11 @@ WifiConnection::WifiConnection()
 {
 }
 
+WifiConnection::~WifiConnection()
+{
+    WiFi.disconnect();
+}
+
 void WifiConnection::connect(const String& p_ssid, const String& p_password) const
 {
     WiFi.begin(p_ssid, p_password);
